@@ -1,10 +1,11 @@
 import React from 'react';
 import BpkText from 'bpk-component-text';
 
-import STYLES from './App.scss';
-import Header from './../Header';
+import Header from '../Header';
 
-const getClassName = className => STYLES[className] || 'UNKNOWN';
+import STYLES from './App.scss';
+
+const getClassName = (className) => STYLES[className] || 'UNKNOWN';
 
 const App = () => (
   <div className={getClassName('App')}>
